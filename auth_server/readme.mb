@@ -1,0 +1,34 @@
+# Auth_server API
+
+> Backend API for Dashboard application, which is a Dashboard directory website
+
+## Usage
+
+Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+
+## Install Dependencies
+
+```
+npm install
+```
+
+## Run App
+
+```
+# Run in dev mode
+npm run dev
+
+# Run in prod mode
+npm start
+```
+
+
+## Demo
+
+The API is live at [dashboard.irimax-dev.fr](https://dashboard.irimax-dev.fr) API documentation is in the folder public/index.html
+
+Extensive documentation with examples [here](https://web.postman.co/collections/8482012-f250024a-b694-47e4-b8b5-563cb365958a?version=latest&workspace=d61fd0ad-8d1c-4a97-8375-ba338142a32b)
+
+- Version: 1.0.0
+- License: MIT
+- Author: Irimax development
