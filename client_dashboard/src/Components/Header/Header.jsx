@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 
 import './header.styles.scss';
 import { ReactComponent as Logo } from '../../assets/img/logo.svg';

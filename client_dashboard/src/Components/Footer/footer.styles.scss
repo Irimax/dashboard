@@ -1,0 +1,22 @@
+@import '../../scss/config';
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-family: cinzel, sans-serif;
+  color: $white-color;
+}
+
+.iconsSoft a {
+  color: $white-color;
+  padding: 5px;
+  &:hover{
+      color: $secondary-color;
+      @include easeOut
+  }
+}
