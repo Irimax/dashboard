@@ -54,21 +54,29 @@
     flex-direction: column;
     padding: 0;
   }
+  @include for-tablet-portrait-up {
+    font-size: 1.5rem;
+  }
+  @include for-small-laptop-up {
+    padding: 0px;
+  }
 }
 
 .menu-link {
   white-space: nowrap;
   color: $white-color;
   margin: 20px;
+  height: 30px;
 
   &:hover {
     color: $secondary-color;
     border-bottom: 1px solid $secondary-color;
+
     @include easeOut;
   }
 
   &.active {
     color: $secondary-color;
-    border-bottom: 1irimaxpx solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
   }
 }

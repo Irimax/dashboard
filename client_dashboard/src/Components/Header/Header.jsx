@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,11 +10,11 @@ const Header = () => {
   return (
     <Fragment>
       <div className='container'>
-        <Link to='/' className='logo-container'>
+        <NavLink to='/' className='logo-container'>
           <Logo className='logo' />
-        </Link>
+        </NavLink>
         <div className='menu-item'>
-          <NavLink className='menu-link' to='/'>
+          <NavLink className='menu-link' to='/' exact activeClassName='active'>
             Home
           </NavLink>
           <NavLink
@@ -43,7 +43,7 @@ const Header = () => {
           </NavLink>
           <NavLink
             className='menu-link'
-            to='/Contact'
+            to='/about'
             exact
             activeClassName='active'
           >

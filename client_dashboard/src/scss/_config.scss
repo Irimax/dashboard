@@ -37,6 +37,12 @@ $showcase-image: url('./assets/img/showcase.jpg');
     @content;
   }
 }
+@mixin for-small-laptop-up {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin for-desktop-up {
   @media (min-width: 1200px) {
     @content;
