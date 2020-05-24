@@ -27,8 +27,13 @@ $showcase-image: url('./assets/img/showcase.jpg');
     @content;
   }
 }
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-small-desktop-up {
+  @media (max-width: 1000px) {
     @content;
   }
 }
