@@ -10,13 +10,59 @@
 .copyright {
   font-family: cinzel, sans-serif;
   color: $white-color;
+  @include for-phone-only {
+    font-size: 0.8rem;
+  }
 }
 
 .iconsSoft a {
   color: $white-color;
   padding: 5px;
-  &:hover{
-      color: $secondary-color;
-      @include easeOut
+  &:hover {
+    .html {
+      color: #e34f26;
+      @include easeOut;
+    }
+    .css {
+      color: #3C99DC;
+      @include easeOut;
+    }
+    .js {
+      color: #f7df1e;
+      @include easeOut;
+    }
+    .node {
+      color: #3C873A;
+      @include easeOut;
+    }
+    .sass {
+      color: #CD6799;
+      @include easeOut;
+    }
+    .react {
+      color: #00d8ff;
+      @include easeOut;
+    }
+    .docker {
+      color: #0db7ed;
+      @include easeOut;
+    }
+    .wordpress {
+      color: #21759b;
+      @include easeOut;
+    }
+    .linux {
+      color: #ffae00;
+      @include easeOut;
+    }
+    .windows {
+      color: #03a5f0;
+      @include easeOut;
+    }
+
+    .apple {
+      color: #a6b1b7;
+      @include easeOut;
+    }
   }
 }
