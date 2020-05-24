@@ -1,0 +1,48 @@
+@import '../../scss/config';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  height: 100px;
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.logo-container {
+  height: 100%;
+  width: 90px;
+  padding: 15px;
+  margin-left: 50px;
+}
+
+.logo {
+  width: 300px;
+  height: 80px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  font-size: 1.2rem;
+  font-family: cinzel, sans-serif;
+}
+
+.menu-link {
+  color: $white-color;
+  margin: 20px;
+
+  &:hover {
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+    @include easeOut;
+  }
+
+  &.active {
+    color: $secondary-color;
+    border-bottom: 1Irimaxpx solid $secondary-color;
+  }
+}
