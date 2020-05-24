@@ -1,9 +1,7 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
- 
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 // Css
 import './App.scss';
@@ -18,18 +16,20 @@ import NotFound from './Components/NotFound/Notfound';
 
 // Container
 import Home from './Homepage.component';
+import Contact from './Container/Contact/Contact';
 
 function App() {
-  library.add(fab)
+  library.add(fab);
   return (
-    <Fragment className="container">
+    <div className='container'>
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
-    </Fragment>
+    </div>
   );
 }
 

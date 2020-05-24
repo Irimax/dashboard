@@ -1,20 +1,21 @@
 $primary-color: #444;
 $secondary-color: rgb(24, 163, 255);
 $white-color: rgb(245, 245, 245);
+$dark-color: #333;
 $showcase-image: url('./assets/img/showcase.jpg');
 
 @mixin easeOut {
   transition: all 0.5s ease-in-out;
 }
 
-// // Set Text Color
-// @function set-text-color($color) {
-//   @if (lightness($color) > 40) {
-//     @return #fff;
-//   } @else {
-//     @return #000;
-//   }
-// }
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark-color;
+  } @else {
+    @return #fff;
+  }
+}
 
 // Media Query Mixins
 @mixin for-phone-only {

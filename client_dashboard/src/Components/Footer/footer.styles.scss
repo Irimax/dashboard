@@ -8,8 +8,8 @@
 }
 
 .copyright {
-  font-family: cinzel, sans-serif;
   color: $white-color;
+  font-family: cinzel, sans-serif;
   @include for-phone-only {
     font-size: 0.8rem;
   }
@@ -24,7 +24,7 @@
       @include easeOut;
     }
     .css {
-      color: #3C99DC;
+      color: #3c99dc;
       @include easeOut;
     }
     .js {
@@ -32,11 +32,11 @@
       @include easeOut;
     }
     .node {
-      color: #3C873A;
+      color: #3c873a;
       @include easeOut;
     }
     .sass {
-      color: #CD6799;
+      color: #cd6799;
       @include easeOut;
     }
     .react {

@@ -8,7 +8,7 @@ import { ReactComponent as Logo } from '../../assets/img/logo.svg';
 const Header = () => {
   return (
     <Fragment>
-      <div className='container'>
+      <div className='container_header'>
         <NavLink to='/' className='logo-container'>
           <Logo className='logo' />
         </NavLink>
