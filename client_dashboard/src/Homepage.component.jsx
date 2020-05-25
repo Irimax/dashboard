@@ -10,7 +10,9 @@ const HomePage = () => {
           'assets/img/slide_1.jpg',
           'assets/img/slide_2.jpg',
         ]}
+        textInfos='Instalation de serveur'
       />
+      
     </div>
   );
 };
