@@ -1,11 +1,16 @@
 import React from 'react';
-
+import Slider from './Components/Slider/Slider.component';
 import './homepage.styles.scss';
 
 const HomePage = () => {
   return (
     <div className='background-img'>
-      {/* <h1 className="title_homepage">Irimax Development</h1> */}
+      <Slider
+        images={[
+          'assets/img/slide_1.jpg',
+          'assets/img/slide_2.jpg',
+        ]}
+      />
     </div>
   );
 };

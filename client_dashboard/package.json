@@ -19,6 +19,8 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
     "typeface-amatic-sc": "^0.0.72",
     "typeface-cinzel": "^0.0.72"
   },
