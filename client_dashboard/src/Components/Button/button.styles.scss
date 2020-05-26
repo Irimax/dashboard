@@ -1,21 +1,23 @@
 @import '../../scss/config';
 
 .btn {
+  position: relative;
   background: rgba($dark-color, 0.8);
   color: #fff;
   font-size: 1rem;
   font-family: amatic-sc, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  //   border-radius: 5px;
   box-shadow: 1px 1px 5px #000;
   border: 0;
   padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
   z-index: 100;
 
   &:hover {
     transform: scale(1.1);
-
+    color: $secondary-color;
     .info {
       animation: anime 1s infinite;
     }

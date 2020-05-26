@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import Btn from '../Button/Button.component';
-import Axios from 'axios';
 
 import '../Slider/slider.styles.scss';
 
@@ -29,18 +28,23 @@ const SliderComponent = () => (
             <h1 className='text-info'>{data.title}</h1>
             <h3 className='text-subtitle'>{data.subtitle}</h3>
             <p className='text'>{data.text}</p>
+
             <div className='btn_text'>
               {data.btn ? (
                 <Btn text_btn={data.btn} linkUrlclick={data.url} />
               ) : (
                 ''
               )}
+              
             </div>
           </div>
+          <div className='over'>
           <img src={data.image} alt={data.title} className='img-slider' />
+          </div>
         </div>
       ))}
     </Slider>
+    {/* <Btn className='btn_text'text_btn='test' /> */}
   </div>
 );
 
