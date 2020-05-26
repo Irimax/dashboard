@@ -7,6 +7,7 @@ const HomePage = () => {
     <div className='background-img'>
       <Slider/>
       
+      
     </div>
   );
 };

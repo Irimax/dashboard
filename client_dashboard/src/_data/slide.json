@@ -16,6 +16,24 @@
         "url": "/contact"
     },
     {
+        "title": "Création de Site sur Mesure",
+        "subtitle": "Creation de sites internet",
+        "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
+        "btn": "would you like to know more ?",
+        "image": "../../assets/img/slide_3.jpg",
+        "url": "/contact"
+    }
+    ,
+    {
+        "title": "Création de Site Vitrine",
+        "subtitle": "Creation de sites internet",
+        "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
+        "btn": "would you like to know more ?",
+        "image": "../../assets/img/slide_4.jpg",
+        "url": "/contact"
+    }
+    ,
+    {
         "title": "Instalation de serveur",
         "subtitle": "Creation de sites internet",
         "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",

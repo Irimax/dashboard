@@ -8,7 +8,7 @@ import datas from '../../_data/slide.json';
 
 const settings = {
   arrows: false,
-  dots: true,
+  dots: false,
   fade: true,
   infinite: true,
   slidesToShow: 1,
