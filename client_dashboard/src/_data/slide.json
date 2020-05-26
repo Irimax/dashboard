@@ -1,0 +1,26 @@
+[
+    {
+        "title": "App & server",
+        "subtitle": "Creation de sites internet",
+        "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
+        "btn": "Plus d'info",
+        "image": "../../assets/img/slide_1.jpg",
+        "url": "/contact"
+    },
+    {
+        "title": "Instalation de serveur",
+        "subtitle": "Creation de sites internet",
+        "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
+        "btn": "would you like to know more ?",
+        "image": "../../assets/img/slide_2.jpg",
+        "url": "/contact"
+    },
+    {
+        "title": "Instalation de serveur",
+        "subtitle": "Creation de sites internet",
+        "text": "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
+        "btn": "would you like to know more ?",
+        "image": "../../assets/img/slide_2.jpg",
+        "url": "/contact"
+    }
+]

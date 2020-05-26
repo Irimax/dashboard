@@ -1,19 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import Btn from '../Button/Button.component';
+import Axios from 'axios';
+
 import '../Slider/slider.styles.scss';
 
-const datas = [
-  {
-    title: 'App & server',
-    subtitle: 'Creation de sites internet',
-    text:
-      "Création de Site Vitrine,Création de Site sur Mesure,Création  d'application Mobile",
-    btn: "Plus d'info",
-    image: '../../assets/img/slide_1.jpg',
-  },
-  { title: 'Instalation de serveur', image: '../../assets/img/slide_2.jpg' },
-];
+import datas from '../../_data/slide.json';
+
 const settings = {
   arrows: false,
   dots: true,
@@ -27,7 +20,7 @@ const settings = {
   // cssEase: "linear"
 };
 
-const SliderComponent = ({ title, onClick, children, ...rest }) => (
+const SliderComponent = () => (
   <div>
     <Slider {...settings}>
       {datas.map((data) => (
@@ -36,19 +29,17 @@ const SliderComponent = ({ title, onClick, children, ...rest }) => (
             <h1 className='text-info'>{data.title}</h1>
             <h3 className='text-subtitle'>{data.subtitle}</h3>
             <p className='text'>{data.text}</p>
-            {data.btn ? <Btn text_btn={data.btn} /> : ''}
+            <div className='btn_text'>
+              {data.btn ? (
+                <Btn text_btn={data.btn} linkUrlclick={data.url} />
+              ) : (
+                ''
+              )}
+            </div>
           </div>
-          <img
-            src={data.image}
-            alt={title}
-            onClick={onClick}
-            className='img-slider'
-            {...rest}
-          />
+          <img src={data.image} alt={data.title} className='img-slider' />
         </div>
       ))}
-
-      {children}
     </Slider>
   </div>
 );
